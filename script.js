@@ -11,7 +11,6 @@ function changeText() {
     intro.textContent = randomMessage;
 }
 
-// 페이지 로드 시 환영 메시지
 window.addEventListener('load', () => {
 console.log('웹사이트가 성공적으로 로드되었습니다!');
 });
