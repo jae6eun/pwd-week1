@@ -1,4 +1,4 @@
-function chageText() {
+function changeText() {
     const intro = document.getElementById('intro');
     const messages = [
         '웹 개발은 정말 재미있어요!',
@@ -7,10 +7,11 @@ function chageText() {
         '계속 공부하면 더 멋진 것을 만들 수 있어요!'
     ];
 
-    const randomMessage = message[Math.floor(Math.random() * messages.length)];
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     intro.textContent = randomMessage;
 }
 
-window.addEventListener('load',()=>{
+// 페이지 로드 시 환영 메시지
+window.addEventListener('load', () => {
 console.log('웹사이트가 성공적으로 로드되었습니다!');
 });
